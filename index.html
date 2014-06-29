@@ -7,14 +7,263 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fontsizetable.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+<div id="wrapper">
+
+<h1>これは何?</h1>
+
+<p>あるピクセルサイズのフォントから、ピクセル単位でサイズを変更する際の換算表です。</p>
+<p>2007年か2008年に必要にかられて作ってみたのですが、その後、スマフォやタブレットの普及に伴い画面サイズの高精細化が進み、devicsPixelRetioという値が登場したり、viewportで表示幅や表示倍率を指定する事ができるようになり、ピクセルパーフェクトでビジュアルの作りこみを行うことが少なくなりました。</p>
+<p>また、文字のサイズ指定もpxのような物理的な指定ではなく、remのような使いやすい相対指定ができるようになりましたので、面倒くさい比率計算をする必要も少なくなりました。</p>
+<p>とはいえ、せっかく作ったものを葬り去るのも勿体ないので、記念物的にここに再現してみます。</p>
+
+<!---------- 10px ---------->
+
+<h2>10px</h2>
+
+<table class="size10">
+<thead>
+<tr>
+<th>px</th>
+<th>%</th>
+<th>サンプル</th>
+</tr>
+</thead>
+
+<tbody>
+<tr class="current"><td class="pixel">10px</td><td class="percent">100%</td><td style="font-size:100%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">11px</td><td class="percent">110%</td><td style="font-size:110%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">12px</td><td class="percent">120%</td><td style="font-size:120%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">13px</td><td class="percent">130%</td><td style="font-size:130%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">14px</td><td class="percent">140%</td><td style="font-size:140%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">15px</td><td class="percent">150%</td><td style="font-size:150%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">16px</td><td class="percent">160%</td><td style="font-size:160%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">17px</td><td class="percent">170%</td><td style="font-size:170%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">18px</td><td class="percent">180%</td><td style="font-size:180%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">19px</td><td class="percent">190%</td><td style="font-size:190%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">20px</td><td class="percent">200%</td><td style="font-size:200%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">21px</td><td class="percent">210%</td><td style="font-size:210%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">22px</td><td class="percent">220%</td><td style="font-size:220%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">23px</td><td class="percent">230%</td><td style="font-size:230%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">24px</td><td class="percent">240%</td><td style="font-size:240%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">25px</td><td class="percent">250%</td><td style="font-size:250%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">26px</td><td class="percent">260%</td><td style="font-size:260%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">27px</td><td class="percent">270%</td><td style="font-size:270%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">28px</td><td class="percent">280%</td><td style="font-size:280%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">29px</td><td class="percent">290%</td><td style="font-size:290%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">30px</td><td class="percent">300%</td><td style="font-size:300%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+</tbody>
+</table>
 
 
-<p>hogehoge</p>
+<!---------- 11px ---------->
+
+<h2>11px</h2>
+
+<table class="size11">
+<thead>
+<tr><th>px</th><th>%</th><th>サンプル</th></tr>
+</thead>
+<tbody>
+<tr><td class="pixel">10px</td><td class="percent">90.91%</td><td style="font-size:90.91%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr class="current"><td class="pixel">11px</td><td class="percent">100%</td><td style="font-size:100%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">12px</td><td class="percent">109.09%</td><td style="font-size:109.09%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">13px</td><td class="percent">118.18%</td><td style="font-size:118.18%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">14px</td><td class="percent">127.27%</td><td style="font-size:127.27%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">15px</td><td class="percent">136.36%</td><td style="font-size:136.36%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">16px</td><td class="percent">145.45%</td><td style="font-size:145.45%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">17px</td><td class="percent">154.55%</td><td style="font-size:154.55%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">18px</td><td class="percent">163.64%</td><td style="font-size:163.64%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">19px</td><td class="percent">172.73%</td><td style="font-size:172.73%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">20px</td><td class="percent">181.82%</td><td style="font-size:181.82%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">21px</td><td class="percent">190.91%</td><td style="font-size:190.91%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">22px</td><td class="percent">200.00%</td><td style="font-size:200.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">23px</td><td class="percent">209.09%</td><td style="font-size:209.09%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">24px</td><td class="percent">218.18%</td><td style="font-size:218.18%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">25px</td><td class="percent">227.27%</td><td style="font-size:227.27%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">26px</td><td class="percent">236.36%</td><td style="font-size:236.36%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">27px</td><td class="percent">245.45%</td><td style="font-size:245.45%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">28px</td><td class="percent">254.55%</td><td style="font-size:254.55%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">29px</td><td class="percent">263.64%</td><td style="font-size:263.64%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">30px</td><td class="percent">272.73%</td><td style="font-size:272.73%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+</tbody>
+</table>
 
 
+<!---------- 12px ---------->
+
+<h2>12px</h2>
+
+<table class="size12">
+<thead>
+<tr><th>px</th><th>%</th><th>サンプル</th></tr>
+</thead>
+<tbody>
+<tr><td class="pixel">10px</td><td class="percent">83.33%</td><td style="font-size:83.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">11px</td><td class="percent">91.67%</td><td style="font-size:91.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr class="current"><td class="pixel">12px</td><td class="percent">100%</td><td style="font-size:100%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">13px</td><td class="percent">108.33%</td><td style="font-size:108.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">14px</td><td class="percent">116.67%</td><td style="font-size:116.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">15px</td><td class="percent">125.00%</td><td style="font-size:125.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">16px</td><td class="percent">133.33%</td><td style="font-size:133.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">17px</td><td class="percent">141.67%</td><td style="font-size:141.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">18px</td><td class="percent">150.00%</td><td style="font-size:150.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">19px</td><td class="percent">158.33%</td><td style="font-size:158.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">20px</td><td class="percent">166.67%</td><td style="font-size:166.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">21px</td><td class="percent">175.00%</td><td style="font-size:175.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">22px</td><td class="percent">183.33%</td><td style="font-size:183.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">23px</td><td class="percent">191.67%</td><td style="font-size:191.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">24px</td><td class="percent">200.00%</td><td style="font-size:200.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">25px</td><td class="percent">208.33%</td><td style="font-size:208.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">26px</td><td class="percent">216.67%</td><td style="font-size:216.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">27px</td><td class="percent">225.00%</td><td style="font-size:225.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">28px</td><td class="percent">233.33%</td><td style="font-size:233.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">29px</td><td class="percent">241.67%</td><td style="font-size:241.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">30px</td><td class="percent">250.00%</td><td style="font-size:250.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+</tbody>
+</table>
+
+
+<!---------- 13px ---------->
+
+<h2>13px</h2>
+
+<table class="size13">
+<thead>
+<tr><th>px</th><th>%</th><th>サンプル</th></tr>
+</thead>
+<tbody>
+<tr><td class="pixel">10px</td><td class="percent">76.92%</td><td style="font-size:76.92%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">11px</td><td class="percent">84.62%</td><td style="font-size:84.62%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">12px</td><td class="percent">92.31%</td><td style="font-size:92.31%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr class="current"><td class="pixel">13px</td><td class="percent">100%</td><td style="font-size:100%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">14px</td><td class="percent">107.69%</td><td style="font-size:107.69%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">15px</td><td class="percent">115.38%</td><td style="font-size:115.38%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">16px</td><td class="percent">123.08%</td><td style="font-size:123.08%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">17px</td><td class="percent">130.77%</td><td style="font-size:130.77%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">18px</td><td class="percent">138.46%</td><td style="font-size:138.46%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">19px</td><td class="percent">146.15%</td><td style="font-size:146.15%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">20px</td><td class="percent">153.85%</td><td style="font-size:153.85%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">21px</td><td class="percent">161.54%</td><td style="font-size:161.54%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">22px</td><td class="percent">169.23%</td><td style="font-size:169.23%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">23px</td><td class="percent">176.92%</td><td style="font-size:176.92%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">24px</td><td class="percent">184.62%</td><td style="font-size:184.62%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">25px</td><td class="percent">192.31%</td><td style="font-size:192.31%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">26px</td><td class="percent">200.00%</td><td style="font-size:200.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">27px</td><td class="percent">207.69%</td><td style="font-size:207.69%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">28px</td><td class="percent">215.38%</td><td style="font-size:215.38%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">29px</td><td class="percent">223.08%</td><td style="font-size:223.08%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">30px</td><td class="percent">230.77%</td><td style="font-size:230.77%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+</tbody>
+</table>
+
+
+<!---------- 14px ---------->
+
+<h2>14px</h2>
+
+<table class="size14">
+<thead>
+<tr><th>px</th><th>%</th><th>サンプル</th></tr>
+</thead>
+<tbody>
+<tr><td class="pixel">10px</td><td class="percent">71.43%</td><td style="font-size:71.43%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">11px</td><td class="percent">78.57%</td><td style="font-size:78.57%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">12px</td><td class="percent">85.71%</td><td style="font-size:85.71%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">13px</td><td class="percent">92.86%</td><td style="font-size:92.86%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr class="current"><td class="pixel">14px</td><td class="percent">100%</td><td style="font-size:100%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">15px</td><td class="percent">107.14%</td><td style="font-size:107.14%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">16px</td><td class="percent">114.29%</td><td style="font-size:114.29%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">17px</td><td class="percent">121.43%</td><td style="font-size:121.43%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">18px</td><td class="percent">128.57%</td><td style="font-size:128.57%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">19px</td><td class="percent">135.71%</td><td style="font-size:135.71%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">20px</td><td class="percent">142.86%</td><td style="font-size:142.86%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">21px</td><td class="percent">150.00%</td><td style="font-size:150.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">22px</td><td class="percent">157.14%</td><td style="font-size:157.14%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">23px</td><td class="percent">164.29%</td><td style="font-size:164.29%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">24px</td><td class="percent">171.43%</td><td style="font-size:171.43%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">25px</td><td class="percent">178.57%</td><td style="font-size:178.57%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">26px</td><td class="percent">185.71%</td><td style="font-size:185.71%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">27px</td><td class="percent">192.86%</td><td style="font-size:192.86%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">28px</td><td class="percent">200.00%</td><td style="font-size:200.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">29px</td><td class="percent">207.14%</td><td style="font-size:207.14%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">30px</td><td class="percent">214.29%</td><td style="font-size:214.29%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+</tbody>
+</table>
+
+
+<!---------- 15px ---------->
+
+<h2>15px</h2>
+
+<table class="size15">
+<thead>
+<tr><th>px</th><th>%</th><th>サンプル</th></tr>
+</thead>
+<tbody>
+<tr><td class="pixel">10px</td><td class="percent">66.67%</td><td style="font-size:66.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">11px</td><td class="percent">73.33%</td><td style="font-size:73.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">12px</td><td class="percent">80.00%</td><td style="font-size:80.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">13px</td><td class="percent">86.67%</td><td style="font-size:86.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">14px</td><td class="percent">93.33%</td><td style="font-size:93.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr class="current"><td class="pixel">15px</td><td class="percent">100%</td><td style="font-size:100%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">16px</td><td class="percent">106.67%</td><td style="font-size:106.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">17px</td><td class="percent">113.33%</td><td style="font-size:113.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">18px</td><td class="percent">120.00%</td><td style="font-size:120.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">19px</td><td class="percent">126.67%</td><td style="font-size:126.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">20px</td><td class="percent">133.33%</td><td style="font-size:133.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">21px</td><td class="percent">140.00%</td><td style="font-size:140.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">22px</td><td class="percent">146.67%</td><td style="font-size:146.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">23px</td><td class="percent">153.33%</td><td style="font-size:153.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">24px</td><td class="percent">160.00%</td><td style="font-size:160.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">25px</td><td class="percent">166.67%</td><td style="font-size:166.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">26px</td><td class="percent">173.33%</td><td style="font-size:173.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">27px</td><td class="percent">180.00%</td><td style="font-size:180.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">28px</td><td class="percent">186.67%</td><td style="font-size:186.67%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">29px</td><td class="percent">193.33%</td><td style="font-size:193.33%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">30px</td><td class="percent">200.00%</td><td style="font-size:200.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+</tbody>
+</table>
+
+
+<!---------- 16px ---------->
+
+<h2>16px</h2>
+
+<table class="size16">
+<thead>
+<tr><th>px</th><th>%</th><th>サンプル</th></tr>
+</thead>
+<tbody>
+<tr><td class="pixel">10px</td><td class="percent">62.50%</td><td style="font-size:62.50%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">11px</td><td class="percent">68.75%</td><td style="font-size:68.75%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">12px</td><td class="percent">75.00%</td><td style="font-size:75.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">13px</td><td class="percent">81.25%</td><td style="font-size:81.25%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">14px</td><td class="percent">87.50%</td><td style="font-size:87.50%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">15px</td><td class="percent">93.75%</td><td style="font-size:93.75%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr class="current"><td class="pixel">16px</td><td class="percent">100%</td><td style="font-size:100%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">17px</td><td class="percent">106.25%</td><td style="font-size:106.25%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">18px</td><td class="percent">112.50%</td><td style="font-size:112.50%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">19px</td><td class="percent">118.75%</td><td style="font-size:118.75%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">20px</td><td class="percent">125.00%</td><td style="font-size:125.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">21px</td><td class="percent">131.25%</td><td style="font-size:131.25%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">22px</td><td class="percent">137.50%</td><td style="font-size:137.50%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">23px</td><td class="percent">143.75%</td><td style="font-size:143.75%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">24px</td><td class="percent">150.00%</td><td style="font-size:150.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">25px</td><td class="percent">156.25%</td><td style="font-size:156.25%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">26px</td><td class="percent">162.50%</td><td style="font-size:162.50%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">27px</td><td class="percent">168.75%</td><td style="font-size:168.75%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">28px</td><td class="percent">175.00%</td><td style="font-size:175.00%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">29px</td><td class="percent">181.25%</td><td style="font-size:181.25%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+<tr><td class="pixel">30px</td><td class="percent">187.50%</td><td style="font-size:187.50%;">わたくしといふ現象は / 仮定された有機交流電燈の / 一つの青い照明です</td></tr>
+</tbody>
+</table>
+
+
+</div><!-- wrapper -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
